@@ -1,0 +1,66 @@
+body {
+  margin: 10;
+  padding: 10;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+
+header {
+  padding: var(--metric-box-spacing);
+  background-color: hsl(140deg 70% 75%);
+  font-size: 1.4em;
+}
+
+responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+main {
+  min-height: calc(100vh - 7em);
+}
+
+article {
+  background-color: hsl(70deg 10% 85%);
+}
+
+aside {
+  background-color: hsl(10deg 40% 85%);
+}
+
+article,
+aside {
+  padding: var(--metric-box-spacing);
+  margin: var(--metric-box-spacing);
+}
+img {
+  max-inline-size: 50%;
+  block-size: auto;
+  inline-size: 50%;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  grid-gap: var(--metric-box-spacing);
+}
+
+.card {
+  padding: var(--metric-box-spacing);
+  background-color: var(--color-off-white);
+  border-radius: var(--metric-radius);
+  box-shadow: var(--generic-shadow);
+}
+
+footer {
+  padding: calc(var(--metric-box-spacing) / 2);
+  background-color: hsl(200deg 70% 95%);
+}
+
+p {
+  margin-block-start: var(--metric-box-spacing);
+}
